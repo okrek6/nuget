@@ -1,8 +1,10 @@
 # This is a script that will scan a directory for Fornite and delete it.
-
-import os
-import string
-
+try:
+    import os
+    import string
+    import sys
+except ImportError:
+    sys.exit("Code: 4440")
 cancer = "Fortnite\\FortniteGame\\Binaries\\Win64\\FortniteClient-Win64-Shipping.exe"
 
 # Check if the directory exists from A to Z
